@@ -1,0 +1,27 @@
+# A nutritionist who works for a fitness club helps members by evaluating their diets. As part of her evaluation,
+# she asks members for the number of fat grams, carbohydrate grams, and protein grams that they consumed in
+# a day. Then, she calculates the number of calories that result from the fat, using the following formula:
+
+#           calories from fat = fat grams X 9
+
+# Next, she calculates the number of calories that result from the carbohydrates, using the following formula:
+
+#           calories from carbs = carb grams X 4
+
+# Next, she calculates the number of calories that result from the proteins, using the following formula:
+
+#           calories from protein = protein grams X 4
+
+calories = 1
+total = 1
+
+calories from fat = fat_grams * 9
+calories from carbs = carb_grams * 4
+calories from protein = protein_grams * 4
+
+fat = int(input('How many grams of fat did you eat today?'))
+carbs = int(input('How many grams of carbs did you eat today?'))
+protein = int(input('How many grams of protein did you eat today?'))
+
+print('You ate', calories, 'calories from protein today.')
+print('You ate a total of', total, 'calories today.')
