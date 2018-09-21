@@ -1,0 +1,11 @@
+# Write a program that asks a user to enter five test scores. You will need to create five variables to hold these
+# scores.
+#
+# The purpose of this assignment is to get practice passing information between functions, this is not a good
+# example of the way programs are really written, but it will help you to understand how to pass parameters.
+
+number = 5
+
+def main():
+
+main()
