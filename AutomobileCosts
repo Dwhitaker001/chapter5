@@ -1,0 +1,21 @@
+# Write a program that asks the user to enter the monthly costs for the following expenses incurred from
+# operating his or her automobile: loan payment, insurance, gas, and maintenance. The program should then
+# display the total monthly cost of these expenses, and the total annual cost of these expenses.
+
+loan = 1
+insurance = 1
+gas = 1
+
+def main():
+    loan = int(input('How much do you pay for your car loan each month?'))
+    insurance = int(input('How much do you pay for your car insurance each month?'))
+    gas = int(input('How much do you spend on gas each month?'))
+    average = int(input('What is the average amount you spend on maintenance monthly?'))
+main()
+
+
+def monthly():
+
+
+
+monthly()
