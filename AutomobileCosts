@@ -11,11 +11,16 @@ def main():
     insurance = int(input('How much do you pay for your car insurance each month?'))
     gas = int(input('How much do you spend on gas each month?'))
     average = int(input('What is the average amount you spend on maintenance monthly?'))
-main()
 
 
 def monthly():
-
+    monthly_total = loan + insurance + gas + average
+    year_total = monthly_total * 12
 
 
 monthly()
+
+
+print('You spend', format(monthly_total), 'on your car each month.')
+print('You spend', format(year_total), 'per year on your car.')
+main()
