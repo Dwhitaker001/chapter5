@@ -7,5 +7,33 @@
 number = 5
 
 def main():
+    grade = test_scores()
+    grader(grade)
+
+def test_scores():
+    test_1 = int(input("What you score on test 1? "))
+    test_2 = int(input("What you score on test 2? "))
+    test_3 = int(input("What you score on test 3? "))
+    test_4 = int(input("What you score on test 4? "))
+    test_5 = int(input("What you score on test 5? "))
+    total = test_1 + test_2 + test_3 + test_4 + test_5
+    print("The average test scores are ", total/5)
+    return (total/5)
+
+
+def grader(grade):
+    if grade >= 90 or grade == 100:
+        print("A")
+    elif grade >= 80:
+        print("B")
+    elif grade >= 70:
+        print("C")
+    elif grade >= 60:
+        print("D")
+    else:
+        print("F")
+
+
+
 
 main()
