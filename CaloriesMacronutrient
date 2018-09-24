@@ -12,16 +12,33 @@
 
 #           calories from protein = protein grams X 4
 
-calories = 1
-total = 1
 
-calories from fat = fat_grams * 9
-calories from carbs = carb_grams * 4
-calories from protein = protein_grams * 4
+def main():
+    fatcal = fat()
+    carbcal = carb()
+    proteincal = protein()
+    total = fatcal + carbcal + proteincal
+    print('You ate a total of', format(total), 'calories today.')
 
-fat = int(input('How many grams of fat did you eat today?'))
-carbs = int(input('How many grams of carbs did you eat today?'))
-protein = int(input('How many grams of protein did you eat today?'))
 
-print('You ate', calories, 'calories from protein today.')
-print('You ate a total of', total, 'calories today.')
+def fat():
+    fat_gram = int(input("How many grams of fat did you eat today?"))
+    fat_total = fat_gram * 9
+    print('You ate', format(fat_total), 'calories from fat today.')
+    return fat_total
+
+def carb():
+    carb_gram = int(input('How many grams of carbs did you eat today?'))
+    carb_total = carb_gram * 4
+    print('You ate', format(carb_total), 'calories from carbs today.')
+    return carb_total
+
+def protein():
+    protein_gram = int(input('How many grams of protein did you eat today?'))
+    protein_total = protein_gram * 4
+    print('You ate', format(protein_total), 'calories from protein today.')
+    return protein_total
+
+
+
+main()
