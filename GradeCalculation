@@ -6,9 +6,11 @@
 
 number = 5
 
+
 def main():
     grade = test_scores()
     grader(grade)
+    
 
 def test_scores():
     test_1 = int(input("What you score on test 1? "))
@@ -32,8 +34,6 @@ def grader(grade):
         print("D")
     else:
         print("F")
-
-
 
 
 main()
